@@ -59,7 +59,7 @@ body {
   font-family: Centra, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  position: relative;
+  /* position: relative; */
   background-color: black !important;
   color: white !important;
 }
@@ -260,12 +260,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  width: 100vw;  /* Abarca todo el ancho de la pantalla */
+  height: 100vh; /* Abarca todo el alto de la pantalla */
+  padding: 260px 0 100px 0; /* Ajusta según lo que necesites */
+  display: flex;
+  justify-content: center; /* Opcional: Centra el contenido horizontalmente */
+  align-items: center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -644,3 +648,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.proj-imbx {
+  text-align: center; /* Para centrar el contenido de texto */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+  height: 300px;            /* Ajusta el alto del contenedor de la imagen según sea necesario */
+  width: 100%;              /* Hace que el contenedor ocupe todo el ancho disponible */
+}
+
+.centered-image {
+  /*width: 100px;     Ancho específico de la imagen */
+  height: 100px;   /* Alto específico de la imagen */
+  object-fit: cover; /* Mantener la proporción de la imagen si es necesario */
+}
+

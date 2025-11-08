@@ -11,7 +11,6 @@
     "start": "serve dist -s -n -n -L -p $PORT"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.21.0",

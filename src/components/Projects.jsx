@@ -11,38 +11,40 @@ import react_logo from "../assets/img/react_logo.png";
 const Projects = () => {
     const projects = [
         {
-            tittle: 'Project 1',
-            description: 'Description 1',
+            title: 'Notes App',
+            description: 'Aplicación web en React para gestionar notas personales. Incluye login y sincronización local.',
+            imUrl: react_logo,
+            link: 'https://spallazhco.github.io/notes-app/#/login',
+            ctaLabel: 'Abrir Notes App'
+        },
+        {
+            title: 'Spring Boot API',
+            description: 'API REST de ejemplo con Spring Boot y seguridad JWT.',
             imUrl: img_spring
         },
         {
-            name: 'Project 2',
-            description: 'Description 2',
+            title: 'VueJS Dashboard',
+            description: 'Dashboard responsivo creado con Vue y TailwindCSS.',
             imUrl: vuejs_logo
         },
         {
-            name: 'Project 3',
-            description: 'Description 3',
+            title: 'Ionic Mobile App',
+            description: 'Aplicación móvil híbrida enfocada en productividad.',
             imUrl: Ionic_Logo
         },
         {
-            name: 'Project 4',
-            description: 'Description 4',
+            title: 'Flutter Wallet',
+            description: 'Wallet digital desarrollada en Flutter con Firebase.',
             imUrl: logo_flutter
         },
-        {
-            name: 'Project 5',
-            description: 'Description 5',
-            imUrl: react_logo
-        }
-    ]
+    ];
     return(
         <section className='project' id='projects'>
             <Container>
                 <Row>
                     <Col>
-                        <h2>Frameworks</h2>
-                        <p>Platforms I work with</p>
+                        <h2>Projects</h2>
+                        <p>Algunos trabajos recientes y demos personales</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id='pills-tab'>
                                 <Nav.Item>

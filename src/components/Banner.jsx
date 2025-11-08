@@ -42,7 +42,7 @@ const Banner = () => {
           <Row>
             <Col xs={12} md={6} xl={8}>
               <div className='col-md-6'>
-                <h1>Hi, I am <span>Sergy</span></h1>
+                <h1>Hi, I am <span>Sergio</span></h1>
                 <p>{text}</p>
                 <p style={{ fontSize: '14px' }}>Developer specialized in mobile and backend solutions. I am currently expanding my skills in web development, exploring new technologies and frameworks.
                   With experience in Java, JavaScript, Flutter, React Native, VueJS, Quarkus, SpringBoot and more, I am dedicated to creating efficient, scalable, and user-friendly applications. My focus is on writing clean, optimized code,

@@ -3,9 +3,9 @@ import logo from "../assets/img/logo_sergi.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import { LINKEDIN_URL } from "../constants/socialLinks";
 
 const Footer = () => {
-  const apiUrl = import.meta.env.VITE_URL_LINKEDIN;
   return (
     <footer className="footer">
       <Container style={{paddingTop: '10px'}}>
@@ -15,7 +15,7 @@ const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href={ apiUrl }><img src={navIcon1} alt="Icon" /></a>
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Icon" /></a>
               {/* <a href="#"><img src={navIcon2} alt="Icon" /></a> */}
               {/* <a href="#"><img src={navIcon3} alt="Icon" /></a> */}
             </div>
